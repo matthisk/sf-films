@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 import { memoize, limit } from './utils';
 
-const GAPPS_KEY = 'AIzaSyDaWeJnjddEw0VFDCnxUtdoQ-_NXC0f5cQ';
+const GAPPS_KEY = process.env['GAPPS_KEY'];
 const GEOCODING_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
 
 function _geocode(address) {
